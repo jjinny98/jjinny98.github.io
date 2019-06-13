@@ -25,16 +25,24 @@
                 height:auto;
                 margin-top:25px;
                 animation-name: rotate;
-                animation-duration:1s;
-                animation-direction: alternate;
+                animation-duration:1.5s;
                 animation-iteration-count: infinite;
             }
             @keyframes rotate {
-                from {
-                    transform:rotate(1deg) ;
+                0% {
+                    transform:rotate(0deg) ;
                 }
-                to {
-                    transform:rotate(-1deg) ;
+                25% {
+                    transform:rotate(0.5deg);
+                }
+                50% {
+                    transform:rotate(0deg);
+                }
+                75% {
+                    transform:rotate(-0.5deg);
+                }
+                100% {
+                    transform:rotate(0deg);
                 }
             }
             button {
