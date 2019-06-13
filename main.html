@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foot.png" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>서울경기 21 - MAIN</title>
+        <style>
+            html {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body {
+                margin:0;
+                text-align:center;
+            }
+            nav {
+                margin-top:60px;
+                font-size:45px;
+                letter-spacing: 10px;
+            }
+            main img{
+                width:850px; 
+                height:auto;
+                margin-top:25px;
+            }
+            button {
+                background:white;
+                border:2px solid #3b99ce;
+                letter-spacing: 5px;
+                font-size:30px;
+                margin:35px;
+                width:250px;
+                height:100px;
+                font-family: 'Ubuntu Condensed', sans-serif;
+            }
+            a:hover button{
+                background:#3b99ce;
+                transition: .3s linear;                
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+           <div id="app"></div>
+        </nav>
+        <main>
+            <img src="메인.png"><br>
+            <a href="season.html"><button>SEASON</button></a>
+            <a href="thema.html"><button>THEMA</button></a>
+        </main>
+        <footer>
+        <small>&copy;20190740&nbsp;전지은</small>
+        </footer>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+         <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+          <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+ 
+    <script type="text/javascript">
+        var app = document.getElementById('app');
+ 
+        var typewriter = new Typewriter(app, {
+            loop: false
+        });
+  
+        typewriter.typeString('서울경기 21')
+            .pauseFor(1000)
+            .deleteAll()
+        typewriter.typeString('서울 경기를 즐기는 21가지 방법')
+            .pauseFor(500)
+            .start();
+    </script>
+    </body>
+</html>

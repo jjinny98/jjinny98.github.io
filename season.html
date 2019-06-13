@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foot.png" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>서울경기 21 - SEASON</title>
+        <style>
+            html {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body {
+                margin:0;
+                text-align:center;
+            }
+            footer {
+                margin-bottom:10px;
+            }
+            nav ul {
+                overflow: hidden;
+                list-style:none;
+                display:flex;
+                justify-content: center;
+                margin:0;
+                padding:0;
+                background:linear-gradient(180deg, #eaf7ff, white);
+                border-bottom:5px solid white;
+            }
+            nav li a{
+                margin-right:50px;
+                margin-left:50px;
+                display:block;
+                padding:10px 60px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Ubuntu Condensed', sans-serif;
+                color:gray;
+            }
+            nav li a:hover {
+                color:black;
+            }
+            nav li a.season {
+                color:black;
+                font-weight: bold;
+                letter-spacing: 13px;
+            }
+             nav li a.thema {
+                letter-spacing: 14px;
+            }
+            .season1 {
+                position: relative;
+                display: inline-block;
+                width:1200px;
+                height:auto;
+                border-top:1px solid #3b99ce;
+                border-bottom:1px solid #3b99ce;
+            }
+            .season1 img {
+                width:auto;
+                height:70%;
+                filter: grayscale(100%);
+                transition: .3s linear;
+            }
+            .season1 a {
+                color:black;
+                text-decoration: none;
+            }
+            .season1 a:hover img {
+                filter:grayscale(0%);
+            }
+            .spring {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:35px;
+                letter-spacing: 7px;
+                width:300px;
+                height:200px;
+                border-right:0.5px solid #3b99ce;
+            }
+            .summer {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:35px;
+                letter-spacing: 7px;
+                width:300px;
+                height:200px;
+                border-right:0.5px solid #3b99ce;
+            }
+            .fall {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:35px;
+                letter-spacing: 7px;
+                width:300px;
+                height:200px;
+                border-right:0.5px solid #3b99ce;
+            }
+            .winter {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:35px;
+                letter-spacing: 7px;
+                width:300px;
+                height:200px;
+                border-right:0.5px solid #3b99ce;
+            }
+            .springplace {
+                display:table-cell; 
+                vertical-align: middle;
+                width:900px;
+                height:230px;
+            }
+            .spring1 {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:448px;
+                height:230px;
+            }
+            .summerplace {
+                display:table-cell; 
+                vertical-align: middle;
+                width:900px;
+                height:230px;
+            }
+            .summer1 {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:297px;
+                height:230px;
+            }
+            .fallplace {
+                display:table-cell; 
+                vertical-align: middle;
+                width:900px;
+                height:230px;
+            }
+            .fall1 {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:297px;
+                height:230px;
+            }
+            .winterplace {
+                display:table-cell; 
+                vertical-align: middle;
+                width:900px;
+                height:230px;
+            }
+            .winter1 {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:297px;
+                height:230px;
+            }
+            hr {
+                margin:0;
+               border:0.5px solid #3b99ce;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+            <img src="로고5.png">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html" class="thema">MAIN</a></li>
+                <li><a href="season.html" class="season">SEASON</a></li>
+                <li><a href="thema.html" class="thema">THEMA</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="season1">
+                <div class="spring">SPRING</div>
+                <div class="springplace">
+                    <a href="season1.html"><div class="spring1"><img src="img/서대문구안산자락벚꽃길.jpg"><br>서대문구 안산자락 벚꽃길</div></a>
+                    <a href="season2.html"><div class="spring1"><img src="img/현충원.jpg"><br>국립현충원</div></a>
+                </div>
+                <hr>
+                <div class="summer">SUMMER</div>
+                <div class="summerplace">
+                    <a href="season3.html"><div class="summer1"><img src="img/하늘공원.jpg"><br>하늘공원 메타세쿼이아 숲길</div></a>
+                    <a href="season4.html"><div class="summer1"><img src="img/서울창포원.jpg"><br>서울창포원</div></a>
+                    <a href="season5.html"><div class="summer1"><img src="img/포천아트밸리.jpg"><br>포천아트밸리</div></a>
+                </div>
+                <hr>
+                <div class="fall">FALL</div>
+                <div class="fallplace">
+                    <a href="season6.html"><div class="fall1"><img src="img/길상사.jpg"><br>길상사</div></a>
+                    <a href="season7.html"><div class="fall1"><img src="img/명성산억새축제.jpg"><br>명성산 억새축제</div></a>
+                    <a href="season8.html"><div class="fall1"><img src="img/벽초지문화수목원.jpg"><br>벽초지문화수목원</div></a>
+                </div>
+                <hr>
+                <div class="winter">WINTER</div>
+                <div class="winterplace">
+                    <a href="season9.html"><div class="winter1"><img src="img/궁평항.png"><br>궁평항</div></a>
+                    <a href="season10.html"><div class="winter1"><img src="img/우음도.jpg"><br>우음도</div></a>
+                    <a href="season11.html"><div class="winter1"><img src="img/이천테르메덴.jpg"><br>이천 테르메덴</div></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+        <small>&copy;20190740&nbsp;전지은</small>
+        </footer>
+    </body>
+</html>

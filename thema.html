@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foot.png" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>서울경기 21 - THEMA</title>
+        <style>
+            html {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body {
+                margin:0;
+                text-align:center;
+            }
+            footer {
+                margin-bottom:10px;
+            }
+            nav ul {
+                overflow: hidden;
+                list-style:none;
+                display:flex;
+                justify-content: center;
+                background:linear-gradient(180deg, #eaf7ff, white);
+                margin:0;
+                padding:0;
+                border-bottom:5px solid white;
+            }
+            nav li a{
+                margin-right:50px;
+                margin-left:50px;
+                display:block;
+                padding:10px 60px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Ubuntu Condensed', sans-serif;
+                color:gray;
+            }
+            nav li a:hover {
+                color:black;
+            }
+            nav li a.season {
+                letter-spacing: 13px;
+            }
+            nav li a.thema {
+                color:black;
+                letter-spacing: 14px; 
+                font-weight: bold;
+            }
+            .thema01 {
+                position: relative;
+                display: inline-block;
+                width:1200px;
+                height:auto;
+                border-top:1px solid #3b99ce;
+                border-bottom:1px solid #3b99ce;
+            }
+            .thema01 img {
+                width:auto;
+                height:70%;
+                filter: grayscale(100%);
+                transition: .3s linear;
+            }
+            .thema01 a {
+                color:black;
+                text-decoration: none;
+            }
+            .thema01 a:hover img {
+                filter:grayscale(0%);
+            }
+            .thema1 {
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:23px;
+                letter-spacing: 3px;
+                width:1200px;
+                height:60px;
+            }
+            .thema2 {
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:23px;
+                letter-spacing: 3px;
+                width:1200px;
+                height:60px;
+            }
+            .thema3 {
+                background:#eaf7ff;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:23px;
+                letter-spacing: 3px;
+                width:1200px;
+                height:60px;
+            }
+            .thema1place {
+                display:table-cell; 
+                vertical-align: middle;
+                width:1200px;
+                height:250px;
+            }
+            .t1p {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:397px;
+                height:250px;
+            }
+            .thema2place {
+                display:table-cell; 
+                vertical-align: middle;
+                width:1200px;
+                height:250px;
+            }
+            .t2p {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:296px;
+                height:250px;
+            }
+            .thema3place {
+                display:table-cell; 
+                vertical-align: middle;
+                width:1200px;
+                height:250px;
+            }
+            .t3p {
+                position: relative;
+                display:table-cell; 
+                vertical-align: middle;
+                font-size:20px;
+                width:397px;
+                height:250px;
+            }
+            hr {
+                margin:0;
+               border:0.5px solid #3b99ce;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+            <img src="로고5.png">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html" class="season">MAIN</a></li>
+                <li><a href="season.html" class="season">SEASON</a></li>
+                <li><a href="thema.html" class="thema">THEMA</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="thema01">
+                <div class="thema1">조용히 숨어 있기 좋은 곳</div>
+                <hr>
+                <div class="thema1place">
+                    <a href="thema1.html"><div class="t1p"><img src="img/CGV씨네라이브러리.jpg"><br>CGV 씨네 라이브러리</div></a>
+                    <a href="thema2.html"><div class="t1p"><img src="img/네이버라이브러리.jpg"><br>네이버 라이브러리</div></a>
+                    <a href="thema3.html"><div class="t1p"><img src="img/윤동주문학관.jpg"><br>윤동주 문화관</div></a>
+                </div>
+                <hr>
+                <div class="thema2">아날로그 감성이 몽글몽글</div><hr>
+                <div class="thema2place">
+                    <a href="thema4.html"><div class="t2p"><img src="img/송월동동화마을.png"><br>송월동 동화마을</div></a>
+                    <a href="thema5.html"><div class="t2p"><img src="img/인천차이나타운.jpg"><br>인천 차이나타운</div></a>
+                    <a href="thema6.html"><div class="t2p"><img src="img/국립민속박물관추억의거리.jpg"><br>국립민속박물관 추억의 거리</div></a>
+                    <a href="thema7.html"><div class="t2p"><img src="img/한국만화박물관.jpg"><br>한국만화박물관</div></a>
+                </div>
+                <hr>
+                <div class="thema3">낭만적인 빛의 향연</div><hr>
+                <div class="thema3place">
+                    <a href="thema8.html"><div class="t3p"><img src="img/아침고요수목원.jpg"><br>아침고요수목원 오색별빛정원전</div></a>
+                    <a href="thema9.html"><div class="t3p"><img src="img/부천아인스월드빛축제.jpg"><br>부천 아인스월드 빛축제</div></a>
+                    <a href="thema10.html"><div class="t3p"><img src="img/정와빛축제.jpg"><br>일산한옥마을 정와빛축제</div></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+        <small>&copy;20190740&nbsp;전지은</small>
+        </footer>
+    </body>
+</html>

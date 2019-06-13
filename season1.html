@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foot.png" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>서울경기 21 - SEASON01</title>
+        <style>
+           html {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body {
+                margin:0;
+                text-align:center;
+            }
+            footer {
+                margin-bottom:10px;
+            }
+            nav ul {
+                overflow: hidden;
+                list-style:none;
+                display:flex;
+                justify-content: center;
+                margin:0;
+                padding:0;
+                background:linear-gradient(180deg, #eaf7ff, white);
+                border-bottom:5px solid white;
+            }
+            nav li a{
+                margin-right:50px;
+                margin-left:50px;
+                display:block;
+                padding:10px 60px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Ubuntu Condensed', sans-serif;
+                color:gray;
+            }
+            nav li a:hover {
+                color:black;
+            }
+            nav li a.season {
+                color:black;
+                font-weight: bold;
+                letter-spacing: 13px;
+            }
+             nav li a.thema {
+                letter-spacing: 14px;
+            }
+            .season01 {
+                position: relative;
+                display: inline-block;
+                width:1200px;
+                height:auto;
+                border-top:1px solid #3b99ce;
+                border-bottom:1px solid #3b99ce;
+            }
+            .menu ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+                border:1px solid #3b99ce;
+                border-radius:10px 10px 0 0;
+                width:250px;
+            }
+            .season01 li {
+                padding:10px;
+            }
+            .season01 .s1 {
+                border-bottom:1px solid #3b99ce;
+                background:#eaf7ff;
+            }
+            .season01 .li1 {
+                border-bottom:1px solid #3b99ce;
+            }
+            .season01 ul a {
+                text-decoration: none;
+                color:black;
+            }
+            .season01 ul a:hover li{
+                background:#eaf7ff;
+            }
+            .season01 .t1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                font-weight: bold;
+                padding:7px;
+                font-size:20px;
+                border-bottom:1px solid #3b99ce;
+                letter-spacing: 3px; 
+            }
+            .bars {
+                position: relative;
+                display: inline-block;
+                margin:0;
+                padding:0;
+            }
+            .menu {
+                position: relative;
+                display: inline-block;
+                margin-top:15px;
+                margin-right:15px;
+                padding:0;
+            }
+            .mailbar {
+                position: relative;
+                display: inline-block;
+                margin-top:15px;
+                margin-right:15px;
+                margin-bottom:15px;
+                padding:0;
+            }
+            .mailbar ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+                border:1px solid #3b99ce;
+                border-radius:10px 10px 0 0;
+                width:250px;
+            }
+            .mailbar .t1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                font-weight: bold;
+                padding:7px;
+                font-size:20px;
+                border-bottom:1px solid #3b99ce;
+                letter-spacing: 3px; 
+            }
+            .text {
+                margin-top:15px;
+                margin-bottom:15px;
+                padding-right : 20px;
+                padding-left : 20px;
+                padding-bottom: 20px;
+                position: relative;
+                display: inline-block;
+                width:850px;
+                height:auto;
+                border:1px solid #3b99ce;
+                vertical-align: top;
+                text-align: left;
+                font-size: 18px;
+                line-height: 2;
+            }
+            .text p {
+                font-weight: bold;
+                font-size:25px;
+                line-height: 1;
+            }
+            .text hr {
+                clear:both;
+                margin-top:10px;
+                margin-bottom:10px;
+                border:0.5px solid #3b99ce;
+            }
+            .text img {
+                margin-top:20px;
+                margin-bottom:20px;
+                float:right;
+                height: 35%;
+                width:35%;
+            }
+            .text fieldset {
+                border:0.5px solid #3b99ce;
+            }
+            .text legend {
+                color:#3b99ce;
+                font-weight: bold;
+                font-size:23px;
+            }
+            .text a {
+                color:black;
+            }
+            .text span {
+                font-weight: bold;
+            }
+            .text ul {
+                list-style: none;
+                margin : 0;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .text li {
+                margin:0;
+                padding:3px;
+            }
+            .text li i {
+                padding-right:13px;
+                color:#fec445;
+            }
+            #popup fieldset {
+                margin-top:15px;
+                margin-left:50px;
+                padding:20px;
+                width:500px;
+                height:320px;
+                text-align: center;
+                border:2px solid #fec445;
+            }
+            #popup legend {
+                text-align: center;
+                font-size: 25px;
+            }
+            .name {
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 15px;
+                border-top:none;
+                border-right:none;
+                border-left:none;
+                border-bottom:1px solid black;
+            }
+            .email {
+                margin-bottom: 12px;
+                padding: 10px;
+                font-size: 15px;
+                border-top:none;
+                border-right:none;
+                border-left:none;
+                border-bottom:1px solid black;
+            }
+            textarea {
+                padding:10px;
+                font-size: 15px;
+                border:none;
+            }
+            .back {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .reset {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .submit {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .back:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            .reset:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            .submit:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            #popupWrap{
+                width:100%;
+                height: 100%;
+                top:0px;
+                left: 0px;
+                position: fixed;
+                display: none;
+            }
+            #popupWrap #popup{
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-top: -200px;
+                margin-left: -350px;
+                width:700px;
+                height:400px;
+                display: none;
+                background:white;
+            }
+        </style>
+        <script type="text/javascript">
+            function openPopup(){
+                var popup = document.getElementById("popup");
+                popup.style.display = "block";
+                var popupWrap = document.getElementById("popupWrap");
+                popupWrap.style.display = "block";
+            }
+            
+            function closePopup(){
+                var popup = document.getElementById("popup");
+                popup.style.display = "none";
+                var popupWrap = document.getElementById("popupWrap");
+                popupWrap.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div>
+            <img src="로고5.png">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html" class="thema">MAIN</a></li>
+                <li><a href="season.html" class="season">SEASON</a></li>
+                <li><a href="thema.html" class="thema">THEMA</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="season01">
+                <div class="bars">
+                <div class="menu">
+                <ul>
+                    <li class="t1">SEASON</li>
+                    <li class="s1">봄</li>
+                    <a href="season1.html"><li class="li1">서대문구 안산자락 벚꽃길</li></a>
+                    <a href="season2.html"><li class="li1">국립현충원</li></a>
+                    <li class="s1">여름</li>
+                    <a href="season3.html"><li class="li1">하늘공원 메타세쿼이아 숲길</li></a>
+                    <a href="season4.html"><li class="li1">서울창포원</li></a>
+                    <a href="season5.html"><li class="li1">포천아트밸리</li></a>
+                    <li class="s1">가을</li>
+                    <a href="season6.html"><li class="li1">길상사</li></a>
+                    <a href="season7.html"><li class="li1">명성산 억새축제</li></a>
+                    <a href="season8.html"><li class="li1">벽초지문화수목원</li></a>
+                    <li class="s1">겨울</li>
+                    <a href="season9.html"><li class="li1">궁평항</li></a>
+                    <a href="season10.html"><li class="li1">우음도</li></a>
+                    <a href="season11.html"><li>이천 테르메덴</li></a>
+                </ul>
+            </div>
+                    <br>
+             <div class="mailbar">
+                <ul>
+                    <li class="t1">MAIL</li>
+                    <li class="li1">cje980819@naver.com</li>
+                    <a href="javascript:openPopup();"><li>1:1 문의하기</li></a>
+                </ul>
+                </div>  
+                </div>
+                <div class="text">
+                    <img src="img/서대문구안산자락벚꽃길.jpg"><p>벚나무 언덕 ‘서대문구 안산자락 벚꽃길’</p>
+                    <span>주소</span>&nbsp;&nbsp;서울시 서대문구 봉원동 산1<br>
+                    <span>홈페이지</span>&nbsp;&nbsp;<a href="http://www.sdm.go.kr/index.do" target="_blank">www.sdm.go.kr</a><br>
+                    <hr>
+
+                   서대문구 안산 자락길은 여의도 벚꽃길과 달리 숲길을 따라 자연스럽게 이어져 있고, 우거진 숲과 길고 편평하게 쭉 뻗은 나무가 어우러진 숨은 벚꽃 명소다. 산이라기보다 언덕쯤 되는 곳으로 오르막과 내리막 경사가 심하지 않아 남녀노소 누구나 쉽게 산책을 즐길 수 있다. 서울의 벚꽃길은 대부분 앉을 곳도 마땅찮고 인공적으로 조성된 곳들인데 안산 자락은 곳곳에 수많은 오솔길과 샘터 및 쉼터도 많고, 숲 속 북카페는 물론 인왕산과 북한산이 한눈에 보이는 전망 자리도 있다. 끝없이 이어지는 벚꽃길이 식상할 때쯤 하늘로 치솟은 메타세쿼이아 군락지와 울창한 참나무 숲이 나타나 또 다른 볼거리를 선사한다. 더불어 잣나무, 자작나무 등 다양한 나무들이 우거져 있어 도심 속 삼림욕이 가능하다. 서대문 안산 자락 벚꽃 산책의 백미는 해발 약 150m 산 중턱 경사면에 펼쳐진 벚나무 샛길이다. 벚꽃이 흐드러진 이 길은 드라마 &lt;신사의 품격&gt;의 배경이 되기도 했다. ‘연희 숲속 쉼터’에서 열리는 안산 자락길 벚꽃 음악회도 놓치지 말자. 벚꽃이 개화하면 하루 1회 이상 문화공연이 펼쳐져 볼거리가 다양하다.<br>
+                    <fieldset class="tips"><legend>&nbsp;TIP&nbsp;</legend>
+                    <ul>
+                        <li><i class="fas fa-caret-right"></i>간단한 음식과 돗자리를 미리 준비해 가면 적당한 곳에 자리 잡고 잠시 쉬면서 피크닉 기분을 내볼 수 있다.</li>
+                        <li><i class="fas fa-caret-right"></i>담양 못지않은 메타세쿼이아 숲을 먼저 보고 싶다면 독립문 쪽보다 서대문 자연사박물관 입구로 들어가는 것이 좋다.</li>
+                        <li><i class="fas fa-caret-right"></i>안산의 허리를 따라 만든 약 7km의 안산 자락길을 한 바퀴 도는 데 2시간 정도 소요된다.</li>
+                        <li><i class="fas fa-caret-right"></i>주말에는 주차 전쟁이므로 대중교통을 이용하자. 차를 가져올 경우 서대문구청 혹은 구청 옆 동신병원 뒤 공영주차장을 이용하거나(카드 결제만 가능) 자연사박물관 옆 연북중학교 운동장에 유료 주차를 해야 한다.</li>
+                        <li><i class="fas fa-caret-right"></i>서울 시내가 한눈에 내려다보이는 정상의 봉수대도 놓치지 말자.</li>
+                    </ul>
+                    </fieldset>
+</div> 
+            </div>
+            <div id="popupWrap">
+                <div id="popup">
+            <fieldset>
+            <legend>&nbsp;&nbsp;1:1 문의&nbsp;&nbsp;</legend>
+                <form method="post">
+                <input type="text" class="name" size="63px" placeholder="Name" required><br>
+                <input type="email" class="email" size="63px" placeholder="E-mail" required><br>
+                <textarea rows="5" cols="65" placeholder="내용을 입력해주세요" required></textarea><br>
+                <a href="javascript:closePopup();"><input type="button" class="back" value="돌아가기"></a>
+                <input type="reset" class="reset" value="다시 쓰기">
+                <input type="submit" class="submit" value="보내기">
+                </form>
+            </fieldset>
+                </div>
+                </div>
+        </main>
+        <footer>
+        <small>&copy;20190740&nbsp;전지은</small>
+        </footer>
+    </body>
+</html>

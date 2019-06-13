@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foot.png" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>서울경기 21 - THEMA10</title>
+        <style>
+           html {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body {
+                margin:0;
+                text-align:center;
+                font-size:15px;
+            }
+            footer {
+                margin-bottom:10px;
+            }
+            nav ul {
+                overflow: hidden;
+                list-style:none;
+                display:flex;
+                justify-content: center;
+                background:linear-gradient(180deg, #eaf7ff, white);
+                margin:0;
+                padding:0;
+            }
+            nav li a{
+                margin-right:50px;
+                margin-left:50px;
+                display:block;
+                padding:10px 60px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Ubuntu Condensed', sans-serif;
+                color:gray;
+            }
+            nav li a:hover {
+                color:black;
+            }
+            nav li a.season {
+                letter-spacing: 13px;
+            }
+            nav li a.thema {
+                color:black;
+                letter-spacing: 14px; 
+                font-weight: bold;
+            }
+            .thema01 {
+                position: relative;
+                display: inline-block;
+                width:1200px;
+                height:auto;
+                border-top:1px solid #3b99ce;
+                border-bottom:1px solid #3b99ce;
+            }
+            .menu ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+                border:1px solid #3b99ce;
+                border-radius:10px 10px 0 0;
+                width:250px;
+            }
+            .thema01 li {
+                padding:10px;
+            }
+            .thema01 .li1 {
+                border-bottom:1px solid #3b99ce;
+            }
+            .thema01 ul a {
+                text-decoration: none;
+                color:black;
+            }
+            .thema01 ul a:hover li{
+                background:#eaf7ff;
+            }
+            .thema01 .t1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                font-weight: bold;
+                padding:7px;
+                font-size:20px;
+                border-bottom:1px solid #3b99ce;
+                letter-spacing: 3px; 
+            }
+            .menu {
+                position: relative;
+                display: inline-block;
+                margin-top:15px;
+                margin-right:15px;
+                padding:0;
+                vertical-align: middle;
+            }
+            .text {
+                margin-top:15px;
+                margin-bottom:15px;
+                padding-right : 20px;
+                padding-left : 20px;
+                padding-bottom: 20px;
+                position: relative;
+                display: inline-block;
+                width:850px;
+                height:auto;
+                border:1px solid #3b99ce;
+                vertical-align: top;
+                text-align: left;
+                font-size: 18px;
+                line-height: 2;
+            }
+            .text p {
+                font-weight: bold;
+                font-size:25px;
+                line-height: 1;
+            }
+            .text hr {
+                clear:both;
+                margin-top:10px;
+                margin-bottom:10px;
+                border:0.5px solid #3b99ce;
+            }
+            .text img {
+                margin-top:20px;
+                margin-bottom:20px;
+                float:right;
+                height: 35%;
+                width:35%;
+            }
+            .text .tip {
+                color:blue;
+                font-weight: bold;
+            }
+            .text fieldset {
+                border:0.5px solid #3b99ce;
+            }
+            .text legend {
+                color:#3b99ce;
+                font-weight: bold;
+                font-size:23px;
+            }
+            .text a {
+                color:black;
+            }
+            .text span {
+                font-weight: bold;
+            }
+            .text ul {
+                list-style: none;
+                margin : 0;
+                padding-left: 15px;
+            }
+            .text li {
+                margin:0;
+                padding:3px;
+            }
+            .text li i {
+                padding-right:13px;
+                color:#fec445;
+            }
+            #popup fieldset {
+                margin-top:15px;
+                margin-left:50px;
+                padding:20px;
+                width:500px;
+                height:320px;
+                text-align: center;
+                border:2px solid #fec445;
+            }
+            #popup legend {
+                text-align: center;
+                font-size: 25px;
+            }
+            .name {
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 15px;
+                border-top:none;
+                border-right:none;
+                border-left:none;
+                border-bottom:1px solid black;
+            }
+            .email {
+                margin-bottom: 12px;
+                padding: 10px;
+                font-size: 15px;
+                border-top:none;
+                border-right:none;
+                border-left:none;
+                border-bottom:1px solid black;
+            }
+            textarea {
+                padding:10px;
+                font-size: 15px;
+                border:none;
+            }
+            .back {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .reset {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .submit {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .back:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            .reset:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            .submit:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            #popupWrap{
+                width:100%;
+                height: 100%;
+                top:0px;
+                left: 0px;
+                position: fixed;
+                display: none;
+            }
+            #popupWrap #popup{
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-top: -200px;
+                margin-left: -350px;
+                width:700px;
+                height:400px;
+                display: none;
+                background:white;
+            }
+            .mailbar {
+                position: relative;
+                display: inline-block;
+                margin-top:15px;
+                margin-right:15px;
+                margin-bottom:15px;
+                padding:0;
+            }
+            .mailbar ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+                border:1px solid #3b99ce;
+                border-radius:10px 10px 0 0;
+                width:250px;
+            }
+            .mailbar .t1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                font-weight: bold;
+                padding:7px;
+                font-size:20px;
+                border-bottom:1px solid #3b99ce;
+                letter-spacing: 3px; 
+            }
+            .bars {
+                position: relative;
+                display: inline-block;
+                margin:0;
+                padding:0;
+            }
+        </style>
+        <script type="text/javascript">
+            function openPopup(){
+                var popup = document.getElementById("popup");
+                popup.style.display = "block";
+                var popupWrap = document.getElementById("popupWrap");
+                popupWrap.style.display = "block";
+            }
+            
+            function closePopup(){
+                var popup = document.getElementById("popup");
+                popup.style.display = "none";
+                var popupWrap = document.getElementById("popupWrap");
+                popupWrap.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div>
+            <img src="로고5.png">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html" class="season">MAIN</a></li>
+                <li><a href="season.html" class="season">SEASON</a></li>
+                <li><a href="thema.html" class="thema">THEMA</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="thema01">
+                <div class="bars">
+                <div class="menu">
+                <ul>
+                    <li class="t1">THEMA</li>
+                    <a href="thema1.html"><li class="li1">CGV 씨네 라이브러리</li></a>
+                    <a href="thema2.html"><li class="li1">네이버 라이브러리</li></a>
+                    <a href="thema3.html"><li class="li1">윤동주 문화관</li></a>
+                    <a href="thema4.html"><li class="li1">송월동 동화마을</li></a>
+                    <a href="thema5.html"><li class="li1">인천 차이나타운</li></a>
+                    <a href="thema6.html"><li class="li1">국립민속박물관 추억의 거리</li></a>
+                    <a href="thema7.html"><li class="li1">한국만화박물관</li></a>
+                    <a href="thema8.html"><li class="li1">아침고요수목원 오색별빛정원전</li></a>
+                    <a href="thema9.html"><li class="li1">부천 아인스월드 빛축제</li></a>
+                    <a href="thema10.html"><li>일산한옥마을 정와빛축제</li></a>
+                </ul>
+            </div>
+                <br>
+             <div class="mailbar">
+                <ul>
+                    <li class="t1">MAIL</li>
+                    <li class="li1">cje980819@naver.com</li>
+                    <a href="javascript:openPopup();"><li>1:1 문의하기</li></a>
+                </ul>
+                </div>  
+                </div>
+                <div class="text">
+                    <img src="img/정와빛축제.jpg"><p>천년 한옥에서 만나는 빛의 향연 ‘정와빛축제’</p>
+                    <span>주소</span>&nbsp;&nbsp;경기도 고양시 일산동구 사리현동<br>
+                    <span>운영시간</span>&nbsp;&nbsp;주간 10:00~16:00, 야간 16:00~22:00<br>
+                    <span>입장료</span>&nbsp;&nbsp;평일 대인 12,000원, 소인 10,000원, <br>주말 및 공휴일 대인 9,000원, 소인 6,500원<br>
+                    <span>전화번호</span>&nbsp;&nbsp;1644-3608<br>
+                    <hr>
+
+                   우리 고유의 멋을 살린 한옥과 빛이 은은하면서도 황홀하게 어우러진 정와빛축제를 둘러보고 나서 전통놀이도 체험해 보고 따뜻한 먹거리도 즐겨보자. 정와는 ‘살아서 천년, 죽어서 천년 간다’는 금강송과 천연 황토, 황토 벽돌을 사용해 전통 한옥마을을 재현한 것이다. 한옥마을 뒤로는 봉화산이 둘러싸고 앞으로는 공릉천이 흐르는 빼어난 자연경관을 자랑하며, 한옥 특유의 고즈넉함과 은은하면서도 화려하게 반짝거리는 조명들이 무척 멋스럽다.<br>
+                    <fieldset><legend>&nbsp;TIP&nbsp;</legend>
+                    <ul>
+                        <li><i class="fas fa-caret-right"></i>정와빛축제 및 야간개장은 상시 관람이 아니고 시즌별로 한시적으로 열리며 날씨에 따라 폐장할 때도 있다.</li>
+                        <li><i class="fas fa-caret-right"></i>정와빛축제 기간에는 소원 쓰기, 다양한 전통놀이 체험 프로그램 등을 운영한다.</li>
+                        <li><i class="fas fa-caret-right"></i>거동이 불편한 사람들은 오르막길이라 관람하는 데 조금 불편할 수 있다.</li>
+                        <li><i class="fas fa-caret-right"></i>축제 기간에는 입장료를 할인해 준다(어른 12,000원→6,000원, 어린이 10,000원→5,000원).</li>
+                        <li><i class="fas fa-caret-right"></i>깊은 산속이라 여름밤에도 꽤 추우니 긴 소매 옷을 꼭 챙겨 가자.</li>
+                        <li><i class="fas fa-caret-right"></i>빛축제인 만큼 해가 완전히 진 7시쯤에 가야 야경을 제대로 감상할 수 있다.</li>
+                        <li><i class="fas fa-caret-right"></i>정와한옥마을까지 가는 길은 가로등 하나 없이 외지고 구불구불하므로 해가 지면 무조건 감속 운전, 절대 안전 운전에 신경 쓰자.</li>
+                    </ul>
+                    </fieldset>
+</div>
+            </div>
+            <div id="popupWrap">
+                <div id="popup">
+            <fieldset>
+            <legend>&nbsp;&nbsp;1:1 문의&nbsp;&nbsp;</legend>
+                <form method="post">
+                <input type="text" class="name" size="63px" placeholder="Name" required><br>
+                <input type="email" class="email" size="63px" placeholder="E-mail" required><br>
+                <textarea rows="5" cols="65" placeholder="내용을 입력해주세요" required></textarea><br>
+                <a href="javascript:closePopup();"><input type="button" class="back" value="돌아가기"></a>
+                <input type="reset" class="reset" value="다시 쓰기">
+                <input type="submit" class="submit" value="보내기">
+                </form>
+            </fieldset>
+                </div>
+                </div>
+        </main>
+        <footer>
+        <small>&copy;20190740&nbsp;전지은</small>
+        </footer>
+    </body>
+</html>

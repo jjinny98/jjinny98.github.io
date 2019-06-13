@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="foot.png" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>서울경기 21 - SEASON10</title>
+        <style>
+           html {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body {
+                margin:0;
+                text-align:center;
+            }
+            footer {
+                margin-bottom:10px;
+            }
+            nav ul {
+                overflow: hidden;
+                list-style:none;
+                display:flex;
+                justify-content: center;
+                margin:0;
+                padding:0;
+                background:linear-gradient(180deg, #eaf7ff, white);
+                border-bottom:5px solid white;
+            }
+            nav li a{
+                margin-right:50px;
+                margin-left:50px;
+                display:block;
+                padding:10px 60px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Ubuntu Condensed', sans-serif;
+                color:gray;
+            }
+            nav li a:hover {
+                color:black;
+            }
+            nav li a.season {
+                color:black;
+                font-weight: bold;
+                letter-spacing: 13px;
+            }
+             nav li a.thema {
+                letter-spacing: 14px;
+            }
+            .season01 {
+                position: relative;
+                display: inline-block;
+                width:1200px;
+                height:auto;
+                border-top:1px solid #3b99ce;
+                border-bottom:1px solid #3b99ce;
+            }
+            .menu ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+                border:1px solid #3b99ce;
+                border-radius:10px 10px 0 0;
+                width:250px;
+            }
+            .season01 li {
+                padding:10px;
+            }
+            .season01 .s1 {
+                border-bottom:1px solid #3b99ce;
+                background:#eaf7ff;
+            }
+            .season01 .li1 {
+                border-bottom:1px solid #3b99ce;
+            }
+            .season01 ul a {
+                text-decoration: none;
+                color:black;
+            }
+            .season01 ul a:hover li{
+                background:#eaf7ff;
+            }
+            .season01 .t1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                font-weight: bold;
+                padding:7px;
+                font-size:20px;
+                border-bottom:1px solid #3b99ce;
+                letter-spacing: 3px; 
+            }
+            .bars {
+                position: relative;
+                display: inline-block;
+                margin:0;
+                padding:0;
+            }
+            .menu {
+                position: relative;
+                display: inline-block;
+                margin-top:15px;
+                margin-right:15px;
+                padding:0;
+            }
+            .mailbar {
+                position: relative;
+                display: inline-block;
+                margin-top:15px;
+                margin-right:15px;
+                margin-bottom:15px;
+                padding:0;
+            }
+            .mailbar ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+                border:1px solid #3b99ce;
+                border-radius:10px 10px 0 0;
+                width:250px;
+            }
+            .mailbar .t1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                font-weight: bold;
+                padding:7px;
+                font-size:20px;
+                border-bottom:1px solid #3b99ce;
+                letter-spacing: 3px; 
+            }
+            .text {
+                margin-top:15px;
+                margin-bottom:15px;
+                padding-right : 20px;
+                padding-left : 20px;
+                padding-bottom: 20px;
+                position: relative;
+                display: inline-block;
+                width:850px;
+                height:auto;
+                border:1px solid #3b99ce;
+                vertical-align: top;
+                text-align: left;
+                font-size: 18px;
+                line-height: 2;
+            }
+            .text p {
+                font-weight: bold;
+                font-size:25px;
+                line-height: 1;
+            }
+            .text hr {
+                clear:both;
+                margin-top:10px;
+                margin-bottom:10px;
+                border:0.5px solid #3b99ce;
+            }
+            .text img {
+                margin-top:20px;
+                margin-bottom:20px;
+                float:right;
+                height: 35%;
+                width:35%;
+            }
+            .text fieldset {
+                border:0.5px solid #3b99ce;
+            }
+            .text legend {
+                color:#3b99ce;
+                font-weight: bold;
+                font-size:23px;
+            }
+            .text a {
+                color:black;
+            }
+            .text span {
+                font-weight: bold;
+            }
+            .text ul {
+                list-style: none;
+                margin : 0;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .text li {
+                margin:0;
+                padding:3px;
+            }
+            .text li i {
+                padding-right:13px;
+                color:#fec445;
+            }
+            #popup fieldset {
+                margin-top:15px;
+                margin-left:50px;
+                padding:20px;
+                width:500px;
+                height:320px;
+                text-align: center;
+                border:2px solid #fec445;
+            }
+            #popup legend {
+                text-align: center;
+                font-size: 25px;
+            }
+            .name {
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 15px;
+                border-top:none;
+                border-right:none;
+                border-left:none;
+                border-bottom:1px solid black;
+            }
+            .email {
+                margin-bottom: 12px;
+                padding: 10px;
+                font-size: 15px;
+                border-top:none;
+                border-right:none;
+                border-left:none;
+                border-bottom:1px solid black;
+            }
+            textarea {
+                padding:10px;
+                font-size: 15px;
+                border:none;
+            }
+            .back {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .reset {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .submit {
+                width:100px;
+                height:50px;
+                margin:12px;
+                font-size: 17px;
+                background: white;
+                border:2px solid #3b99ce;
+            }
+            .back:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            .reset:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            .submit:hover {
+                background:#3b99ce;               
+                color:white;
+                font-weight: bold;
+                transition: .2s linear;  
+            }
+            #popupWrap{
+                width:100%;
+                height: 100%;
+                top:0px;
+                left: 0px;
+                position: fixed;
+                display: none;
+            }
+            #popupWrap #popup{
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-top: -200px;
+                margin-left: -350px;
+                width:700px;
+                height:400px;
+                display: none;
+                background:white;
+            }
+        </style>
+        <script type="text/javascript">
+            function openPopup(){
+                var popup = document.getElementById("popup");
+                popup.style.display = "block";
+                var popupWrap = document.getElementById("popupWrap");
+                popupWrap.style.display = "block";
+            }
+            
+            function closePopup(){
+                var popup = document.getElementById("popup");
+                popup.style.display = "none";
+                var popupWrap = document.getElementById("popupWrap");
+                popupWrap.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div>
+            <img src="로고5.png">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html" class="thema">MAIN</a></li>
+                <li><a href="season.html" class="season">SEASON</a></li>
+                <li><a href="thema.html" class="thema">THEMA</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="season01">
+                <div class="bars">
+                <div class="menu">
+                <ul>
+                    <li class="t1">SEASON</li>
+                    <li class="s1">봄</li>
+                    <a href="season1.html"><li class="li1">서대문구 안산자락 벚꽃길</li></a>
+                    <a href="season2.html"><li class="li1">국립현충원</li></a>
+                    <li class="s1">여름</li>
+                    <a href="season3.html"><li class="li1">하늘공원 메타세쿼이아 숲길</li></a>
+                    <a href="season4.html"><li class="li1">서울창포원</li></a>
+                    <a href="season5.html"><li class="li1">포천아트밸리</li></a>
+                    <li class="s1">가을</li>
+                    <a href="season6.html"><li class="li1">길상사</li></a>
+                    <a href="season7.html"><li class="li1">명성산 억새축제</li></a>
+                    <a href="season8.html"><li class="li1">벽초지문화수목원</li></a>
+                    <li class="s1">겨울</li>
+                    <a href="season9.html"><li class="li1">궁평항</li></a>
+                    <a href="season10.html"><li class="li1">우음도</li></a>
+                    <a href="season11.html"><li>이천 테르메덴</li></a>
+                </ul>
+            </div>
+                    <br>
+             <div class="mailbar">
+                <ul>
+                    <li class="t1">MAIL</li>
+                    <li class="li1">cje980819@naver.com</li>
+                    <a href="javascript:openPopup();"><li>1:1 문의하기</li></a>
+                </ul>
+                </div>  
+                </div>
+                <div class="text">
+                    <img src="img/우음도.jpg"><p>푸른 하늘과 맞닿은 고독 ‘우음도’</p>
+                    <span>주소</span>&nbsp;&nbsp;경기도 화성시 송산면 고정리<br>
+                    <span>운영시간</span>&nbsp;&nbsp;방문자센터 앞의 갈태밭은 오후 4시 30분까지 입장할 수 있고 <br>오후 5시엔 출입문을 닫으니 갈대밭을 배경으로 낙조 사진을 촬영하려면 <br>조금 서두르는 것이 좋다.<br>
+                    <hr>
+
+                   시화호 간척지 개발로 섬에서 육지로 바뀐 우음도. 겨울과 봄 사이의 우음도는 온통 갈색빛이다. 쓸쓸한 갈대밭이 황량하게 펼쳐진 벌판 한가운데 그냥 서 있기만 해도 화보가 된다. 덕분에 사진 좀 찍는다 하는 사람들에게는 출사의 명소로 손꼽히는 곳이다. 하늘을 나는 패러글라이딩 등 도심에서는 볼 수 없는 이색적인 풍경을 만끽할 수 있다. 우음도 끝자락에 위치한 공룡알화석산지 방문자 센터도 놓치지 말자.<br>
+                    <fieldset><legend>&nbsp;TIP&nbsp;</legend>
+                    <ul>
+                        <li><i class="fas fa-caret-right"></i>우음도는 명확한 주소가 있는 것은 아니다. 자동차로 갈 경우 내비게이션에서 ‘송산 그린시티 전망대’를 검색하면 찾아가기 편하다. 주차는 공룡알화석산지 방문자 센터에 하면 된다.</li>
+                        <li><i class="fas fa-caret-right"></i>우음도 갈대밭은 석양 무렵이 가장 아름답다.</li>
+                        <li><i class="fas fa-caret-right"></i>우음도의 갈대는 고독의 상징이니 날이 화창하지 않아도 좋다. 흐린 날에 떠나기 좋은 여행지로 이만한 곳도 없다.</li>
+                        <li><i class="fas fa-caret-right"></i>사계절 내내 일몰과 일출로 워낙 유명한 곳이지만 특히 하얗게 반짝거리는 삘기꽃이 한창 피는 5월에 가면 환상적인 우음도를 만날 수 있다.</li>
+                        <li><i class="fas fa-caret-right"></i>현재 우음도는 친환경, 관광, 레저 복합도시로 개발한다는 명목하에 송산 그린시티 개발산업이 추진되고 있어서 곧 거대한 갈색빛의 우음도를 볼 수 없게 될 예정이니 서둘러 방문해 보자.</li>
+                        <li><i class="fas fa-caret-right"></i>우음도까지 가는 대중교통이 다소 험난하므로 자동차로 이동할 것을 추천한다.</li>
+                    </ul>
+                    </fieldset>
+</div>
+            </div>
+            <div id="popupWrap">
+                <div id="popup">
+            <fieldset>
+            <legend>&nbsp;&nbsp;1:1 문의&nbsp;&nbsp;</legend>
+                <form method="post">
+                <input type="text" class="name" size="63px" placeholder="Name" required><br>
+                <input type="email" class="email" size="63px" placeholder="E-mail" required><br>
+                <textarea rows="5" cols="65" placeholder="내용을 입력해주세요" required></textarea><br>
+                <a href="javascript:closePopup();"><input type="button" class="back" value="돌아가기"></a>
+                <input type="reset" class="reset" value="다시 쓰기">
+                <input type="submit" class="submit" value="보내기">
+                </form>
+            </fieldset>
+                </div>
+                </div>
+        </main>
+        <footer>
+        <small>&copy;20190740&nbsp;전지은</small>
+        </footer>
+    </body>
+</html>
